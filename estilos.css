@@ -1,0 +1,784 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+img,
+svg {
+    width: 100%;
+    height: auto;
+}
+
+:root {
+    --backgroundcolor: #F8F2EC;
+    --linkcolor: #640F02;
+    --buttoncolor: #92564C;
+}
+
+@font-face {
+    font-family: Asap;
+    src: url(font_family/Asap/static/Asap-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Istokweb;
+    src: url(font_family/Istok_Web/IstokWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(font_family/Raleway/static/Raleway-Bold.ttf);
+}
+
+body {
+    background-color: var(--backgroundcolor);
+    text-decoration-color: var(#640F02);
+}
+
+
+.grelha {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+}
+
+.grelha_2 {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.max {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#logo {
+    grid-column: 2/3;
+    margin-top: 15%;
+    margin-left: 8%;
+}
+
+nav {
+    grid-column: 4/12;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Raleway;
+}
+
+nav a {
+    color: var(--linkcolor);
+    text-decoration: none;
+    font-family: Raleway;
+}
+
+.button {
+    color: var(--backgroundcolor);
+    background-color: var(--buttoncolor);
+    padding: 17px;
+    border-radius: 10px;
+}
+
+#header_image {
+    grid-column: 3/8;
+    padding-top: 17%;
+    padding-bottom: 20%;
+}
+
+#imagem_naima {
+    grid-column: 8/12;
+    margin-top: 150px;
+}
+
+
+#segundadobra {
+    background-image: linear-gradient(240deg, rgba(226, 192, 157, 1) 4%, rgba(193, 81, 31, 1) 21%, rgba(100, 15, 2, 1) 57%);
+    border-radius: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#segundadobra_festival {
+    grid-column: 2/7;
+    color: #FFFFFF;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    line-height: 20px;
+    font-family: Asap;
+}
+
+#segundadobra_festival h1 {
+    padding-bottom: 40px;
+    font-size: 64px;
+    font-family: Istokweb;
+
+}
+
+#segundadobra_festival p {
+    text-align: left;
+    padding-bottom: 60px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 50px;
+}
+
+#segundadobra_festival button {
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #F8F2EC;
+    color: #92564C;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: Istokweb;
+}
+
+#segundadobra_imagem {
+    grid-column: 7/12;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#terceiradobra_introdução {
+    padding-top: 100px;
+    grid-column: 4/10;
+    text-align: center;
+    font-family: Istokweb;
+}
+
+#terceiradobra_introdução p {
+    padding-top: 70px;
+    line-height: 20px;
+    font-family: Asap;
+}
+
+#terceiradobra_introdução h2 {
+    font-size: 64px;
+    color: #12392C;
+    letter-spacing: 1.92px;
+    -webkit-text-stroke-width: 1px;
+    padding-bottom: 20px;
+}
+
+#terceiradobra_introdução h3 {
+    font-size: 32px;
+    color: #12392C;
+    line-height: 20px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+#terceiradobra_texto {
+    display: flex;
+    padding-top: 150px;
+    gap: 60px;
+    align-items: center;
+    line-height: 20px;
+    font-family: Asap;
+}
+
+#terceiradobra_texto img {
+    width: 150px;
+}
+
+
+#terceiradobra_numeros {
+    grid-column: 5/10;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+#quartadobra {
+    background: linear-gradient(250deg, rgba(226, 192, 157, 1) 16%, rgba(217, 217, 217, 1) 51%, rgba(226, 192, 157, 1) 89%);
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+#quartadobra h1 {
+    grid-column: 3/11;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    font-size: 40px;
+    color: #640F02;
+    font-family: Istokweb;
+}
+
+#quartadobra img {
+    grid-column: 7/11;
+    padding-bottom: 100px;
+}
+
+#quartadobra h1 {
+    text-align: center;
+    font-size: 54px;
+}
+
+#quintadobra h1 {
+    grid-column: 3/11;
+    padding-top: 50px;
+    color: #12392C;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.92px;
+    font-family: Istokweb;
+}
+
+#quintadobra {
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+#perguntas {
+
+    grid-column: 4/10;
+    padding-top: 50px;
+}
+
+#perguntas1 {
+    padding-bottom: 50px;
+    font-family: Asap;
+    padding: 15px;
+    padding-bottom: 40px;
+}
+
+#footer {
+    background: radial-gradient(circle, rgba(226, 192, 157, 1) 0%, rgba(193, 81, 31, 1) 50%, rgba(100, 15, 2, 1) 100%);
+    border-radius: 8px;
+}
+
+#footer_conteudo {
+    grid-column: 8/11;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+#contactos {
+    color: white;
+}
+
+#contactos p {
+    padding-bottom: 25px;
+    font-family: Raleway;
+}
+
+#redes {
+    display: flex;
+    gap: 25px;
+    width: 25px;
+}
+
+#direitos-texto {
+    display: flex;
+    gap: 25px;
+    grid-column: 5/9;
+    font-family: Raleway;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #640F02;
+}
+
+
+
+
+
+
+#primeiradobra_sobre {
+    background: radial-gradient(circle, rgba(18, 57, 44, 1) 8%, rgba(90, 117, 108, 1) 100%);
+    margin-top: 50px;
+    border-radius: 8px;
+    margin-bottom: 70px;
+}
+
+#primeiradobra_texto {
+    padding-left: 20px;
+    grid-column: 2/7;
+    color: #FFFFFF;
+    padding-bottom: 100px;
+    width: 484px;
+    line-height: 20px;
+    font-family: Asap;
+    grid-row: 1;
+}
+
+#primeiradobra_sobre h1 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    font-size: 64px;
+    text-align: center;
+    font-weight: 700;
+    font-family: Istokweb;
+    grid-row: 1;
+}
+
+#imagem_sobre {
+    padding-bottom: 100px;
+    padding-top: 150px;
+    grid-column: 7/12;
+    grid-row: 1;
+}
+
+#IBFM {
+    gap: 100px;
+    padding-bottom: 100px;
+}
+
+#IBFM_naima {
+    grid-column: 2/6;
+    /*nao fica*/
+}
+
+#IBFM_texto {
+    grid-column: 7/12;
+    padding-bottom: 100px;
+    width: 484px;
+    line-height: 20px;
+    font-family: Asap;
+}
+
+#IBFM img {
+    grid-column: 8/11;
+    padding-top: 100px;
+    width: 50%;
+    grid-row: 1;
+}
+
+#propriedade {
+    background: radial-gradient(circle, rgba(18, 57, 44, 1) 8%, rgba(90, 117, 108, 1) 100%);
+    margin-top: 70px;
+    border-radius: 8px;
+}
+
+#propriedade_texto {
+    grid-column: 2/8;
+    color: #FFFFFF;
+    padding-bottom: 100px;
+    margin-bottom: 70px;
+    padding-top: 100px;
+    line-height: 20px;
+    font-family: Asap;
+}
+
+#propriedade_texto h1 {
+
+    padding-bottom: 70px;
+
+}
+
+#propriedade img {
+
+    width: 500px;
+    grid-column: 9/12;
+    padding-top: 250px;
+
+}
+
+
+#propriedade h1 {
+    font-size: 64px;
+    padding-top: 100px;
+    font-family: Istokweb;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#premios_ {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    padding-left: 20px;
+
+}
+
+#premios_ p {
+
+    font-size: 36px;
+    color: #5F6845;
+    text-align: center;
+    font-family: Istokweb;
+
+}
+
+#premios_ img {
+
+    width: 40%;
+
+}
+
+#prémios_texto h1 {
+
+    text-align: center;
+    color: #12392C;
+    font-size: 64px;
+    padding-top: 50px;
+    font-family: Istokweb;
+}
+
+#footer {
+    background: radial-gradient(circle, rgba(226, 192, 157, 1) 0%, rgba(193, 81, 31, 1) 50%, rgba(100, 15, 2, 1) 100%);
+    border-radius: 8px;
+}
+
+#footer_conteudo {
+
+    grid-column: 8/11;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+#contactos {
+    color: white;
+}
+
+
+#redes {
+    display: flex;
+    gap: 25px;
+}
+
+#direitos-texto {
+    display: flex;
+    gap: 25px;
+    grid-column: 5/9;
+    font-family: Raleway;
+}
+
+
+
+
+
+
+
+
+#openstage_desktop {
+    grid-column: 2/12;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+
+
+#performance {
+    background: linear-gradient(25deg, rgba(122, 50, 39, 1) 21%, rgba(201, 106, 63, 1) 57%, rgba(229, 200, 170, 1) 96%);
+    border-radius: 8px;
+}
+
+#lado_la img {
+    width: 500px;
+    grid-column: 1/2;
+    /*nao fica*/
+}
+
+#performance_texto {
+    color: #FFFFFF;
+    grid-column: 3/11;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+#performance_texto h1 {
+    font-size: 60px;
+    font-weight: 700;
+    padding-bottom: 40px;
+    font-family: Istokweb;
+}
+
+#performance_texto p {
+    text-align: left;
+    width: 491px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    margin-left: 470px;
+    font-family: Asap;
+}
+
+#performance_texto button {
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #F8F2EC;
+    color: #92564C;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: 470px;
+    font-family: Istokweb;
+}
+
+#localização h1 {
+    grid-column: 4/10;
+    text-align: center;
+    color: #12392C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+#localização_1 {
+    grid-column: 2/5;
+    color: #5F6845;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 50px;
+    font-family: Asap;
+}
+
+#localização_2 {
+    grid-column: 9/12;
+    color: #5F6845;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    font-family: Asap;
+}
+
+#localização img {
+
+    grid-column: 6/8;
+    width: 500px;
+
+}
+
+
+
+
+
+
+
+
+
+
+#footer {
+    background: radial-gradient(circle, rgba(226, 192, 157, 1) 0%, rgba(193, 81, 31, 1) 50%, rgba(100, 15, 2, 1) 100%);
+    border-radius: 8px;
+    margin-top: 100px;
+}
+
+#footer_imagem {
+    grid-column: 2/7;
+    margin-top: 120px;
+    margin-bottom: 150px;
+    height: 300px;
+}
+
+#footer_conteudo {
+
+    grid-column: 8/11;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+#contactos {
+
+    color: white;
+
+}
+
+
+
+#redes {
+
+    display: flex;
+    gap: 25px;
+
+}
+
+#direitos-texto {
+
+    display: flex;
+    gap: 25px;
+    grid-column: 5/9;
+    font-family: Raleway;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:800px) {
+
+    .grelha,
+    .grelha_2 {
+        display: block;
+        padding: 10px;
+    }
+
+    #header_image {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+    }
+
+    #imagem_naima {
+        position: absolute;
+        right: 0;
+        bottom: -500px;
+        /* ajusta conforme o visual desejado */
+        z-index: 1;
+        width: 40%;
+        /* ou outro valor que funcione bem no mobile */
+    }
+
+    #terceiradobra_texto {
+
+        display: block;
+
+    }
+
+
+    #terceiradobra_texto img {
+
+        width: 100px;
+        padding-bottom: 50px;
+
+    }
+
+
+
+
+    #segundadobra {
+
+        margin-top: 200px;
+
+    }
+
+    #logo,
+    nav,
+    #header_image,
+    #imagem_naima,
+    #segundadobra_festival,
+    #segundadobra_imagem,
+    #terceiradobra_introdução,
+    #terceiradobra_texto,
+    #terceiradobra_numeros,
+    #quartadobra h1,
+    #quartadobra img,
+    #quintadobra h1,
+    #perguntas,
+    #footer_conteudo,
+    #footer_imagem,
+    #primeiradobra_texto,
+    #imagem_sobre,
+    #IBFM_texto,
+    #IBFM img,
+    #propriedade_texto,
+    #propriedade img,
+    #performance_texto,
+    #lado_la img,
+    #localização h1,
+    #localização_1,
+    #localização_2,
+    #localização img,
+    #direitos-texto {
+        grid-column: auto;
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #header_image,
+    #imagem_naima,
+    #segundadobra_imagem,
+    #quartadobra img,
+    #imagem_sobre,
+    #IBFM img,
+    #propriedade img,
+    #localização img,
+    #footer_imagem,
+    #lado_la img {
+        width: 100%;
+        height: auto;
+    }
+
+    #segundadobra_festival h1,
+    #terceiradobra_introdução h2,
+    #quintadobra h1,
+    #propriedade h1,
+    #prémios_texto h1,
+    #performance_texto h1,
+    #localização h1 {
+        font-size: 36px;
+    }
+
+    #segundadobra_festival p,
+    #terceiradobra_introdução p,
+    #terceiradobra_texto p,
+    #performance_texto p,
+    #propriedade_texto p,
+    #localização_1,
+    #localização_2 {
+        font-size: 14px;
+    }
+
+    #performance_texto p,
+    #performance_texto button {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #IBFM {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #redes {
+        justify-content: center;
+    }
+
+    .button,
+    #segundadobra_festival button,
+    #performance_texto button {
+        width: auto;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+}
